@@ -5,6 +5,7 @@ go 1.17
 require dagger.io/dagger v0.4.0
 
 require (
+	cloud.google.com/go/compute v1.7.0 // indirect
 	github.com/Khan/genqlient v0.5.0 // indirect
 	github.com/Microsoft/go-winio v0.5.2 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
@@ -34,6 +35,7 @@ require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.11.2 // indirect
 	github.com/iancoleman/strcase v0.2.0 // indirect
 	github.com/klauspost/compress v1.15.9 // indirect
+	github.com/kr/text v0.2.0 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
@@ -46,6 +48,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/rs/zerolog v1.28.0 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
+	github.com/stretchr/objx v0.5.0 // indirect
 	github.com/tonistiigi/fsutil v0.0.0-20220115021204-b19f7f9cb274 // indirect
 	github.com/tonistiigi/units v0.0.0-20180711220420-6950e57a87ea // indirect
 	github.com/tonistiigi/vt100 v0.0.0-20210615222946-8066bb97264f // indirect
@@ -69,6 +72,7 @@ require (
 	google.golang.org/genproto v0.0.0-20220810155839-1856144b1d9c // indirect
 	google.golang.org/grpc v1.49.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
+	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 )
 
 replace github.com/docker/docker => github.com/docker/docker v20.10.3-0.20220414164044-61404de7df1a+incompatible
