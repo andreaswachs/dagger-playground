@@ -1,6 +1,6 @@
 module github.com/andreaswachs/dagger-playgroud/pipelines
 
-go 1.18
+go 1.17
 
 require dagger.io/dagger v0.4.0
 
