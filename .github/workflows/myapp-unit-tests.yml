@@ -17,8 +17,7 @@ jobs:
           check-latest: true
           cache: true
           cache-dependency-path: pipelines/go.sum
-      - name: Testing
-        run: |
-          cd pipelines
-          go mod tidy
-          go run main.go
+
+      - name: Dagger/unit-tests
+        run: go mod tidy && go run main.go
+        working-directory: pipelines
