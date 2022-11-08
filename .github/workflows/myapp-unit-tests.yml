@@ -13,4 +13,6 @@ jobs:
 
       - name: Testing
         run: |
-          go run pipelines/main.go
+          cd pipelines
+          go mod tidy
+          go run main.go
