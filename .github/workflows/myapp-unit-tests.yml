@@ -1,0 +1,23 @@
+name: Dagger/tests
+
+on:
+  push:
+  workflow_dispatch:
+    
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-go@v3
+        with:
+          go-version: '1.18'
+          check-latest: true
+          cache: true
+          cache-dependency-path: pipelines/go.sum
+
+      - name: Dagger/unit-tests
+        run: go mod tidy && go run main.go
+        working-directory: pipelines
