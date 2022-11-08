@@ -1,0 +1,16 @@
+name: Dagger/tests
+
+on:
+  push:
+  workflow_dispatch:
+    
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Testing
+        run: |
+          go run pipelines/main.go
